@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- (1) html載入字體 遠端嵌入
+        google fonts
+        https://fonts.google.com/
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+     <style> 
+        p{
+            font-family: "Noto Sans TC", sans-serif;
+        }
+     </style> 
+    -->
+    <!-- (2) CSS載入字體  遠端嵌入
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+        p {
+            font-family: "Noto Sans TC", sans-serif;
+            font-family: "新細明體";
+        }
+    </style>
+    -->
+    <!-- (3) CSS載入字體 下載並啟用資料夾文字  (不建議使用，因為會導致伺服器容量變大，載入變慢(占空間))-->
+    <style>
+        /* 載入字體 命名*/
+        @font-face {
+            font-family: 'noto';
+            src: url(fonts/NotoSansTC-VariableFont_wght.ttf);
+        }    
+        @font-face {
+            font-family: 'honk';
+            src: url(fonts/Honk-Regular-VariableFont_MORF\,SHLN.ttf);
+        }
+        /* 使用 */
+        p{
+            /* 要先確定字體設計中文或英文，若前者中英文皆有設計就會蓋掉後者字體 */
+            font-family: 'honk','noto';
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <!-- ctlorem10 中文生成-->
+        一起基金目錄已經加。
+        <!-- lorem5 英文生成-->
+        Lorem ipsum dolor sit amet.
+    </p>
+</body>
+</html>

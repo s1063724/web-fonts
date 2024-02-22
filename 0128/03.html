@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+        /* 
+            文字粗細 : font-weight
+            文字預設粗細 : 400 
+            目前標題文字(h1~h6)以及文字粗體語法(b、strong)，文字粗細為700
+            文字粗細用整數數字表示(100-900)
+            bold 700
+            bolder 繼承父系元素後(文字大小)+300 -> 在此為400+300=700
+            lighter 繼承父系元素後(文字大小)-300 -> 在此為400-300=100
+        */
+        h1,b{
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 1em;
+        }
+
+        p{
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        div{
+            font-size: 400;
+        }
+        .t100{
+            font-weight:100;
+        }
+        .t200{
+            font-weight:200;
+        }
+        .t300{
+            font-weight:300;
+        }
+        .t400{
+            font-weight:400;
+        }
+        .t500{
+            font-weight:500;
+        }
+        .t600{
+            font-weight:600;
+        }
+        .t700{
+            font-weight:700;
+        }
+        .t800{
+            font-weight:800;
+        }
+        .t900{
+            font-weight:900;
+        }
+        .tt{
+            font-weight: 580;
+        }
+        .bold{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p>0.相關內容教育活動引。Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quaerat velit voluptatum.</p>
+    <p class="t100">1.相關內容教育活動引。Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quaerat velit voluptatum.</p>
+    <p class="t200">2.相關內容教育活動引。Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quaerat velit voluptatum.</p>
+    <p class="t300">3.相關內容教育活動引。Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quaerat velit voluptatum.</p>
+    <p class="t400">4.相關內容教育活動引。Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quaerat velit voluptatum.</p>
+    <p class="t500">5.相關內容教育活動引。Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quaerat velit voluptatum.</p>
+    <p class="tt">5.相關內容教育活動引。Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quaerat velit voluptatum.</p>
+    <p class="t600">6.相關內容教育活動引。Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quaerat velit voluptatum.</p>
+    <p class="t700">7.相關內容教育活動引。Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quaerat velit voluptatum.</p>
+    <p class="t800">8.相關內容教育活動引。Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quaerat velit voluptatum.</p>
+    <p class="t900">9.相關內容教育活動引。Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quaerat velit voluptatum.</p>
+    <p class="bold">9.相關內容教育活動引。Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quaerat velit voluptatum.</p>
+    <!-- <h1>9.相關內容教育活動引。Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quaerat velit voluptatum.</h1> -->
+    <!-- <b>9.相關內容教育活動引。Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quaerat velit voluptatum.</b> -->
+
+    <div>
+        <p class="bold">9.相關內容教育活動引。Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quaerat velit voluptatum.</p>
+
+    </div>
+</body>
+</html>
