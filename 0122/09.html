@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        表單:form
+            屬性:
+                action:連結後臺網址(#表示回首頁)
+                method:傳送方式
+                    get:
+                    post:
+            元素類型:區塊元素
+        輸入框:input
+            屬性:
+                type:種類
+                placeholder:輸入框內的提示文字
+                name:元素名稱，針對後台使用(可以互相使用)
+                id:元素名稱，針對javascript使用(可以互相使用)
+                class:元素名稱，針對css使用(可以互相使用)
+                disabled:關閉輸入(執行)
+                required:必填
+                value:值
+                max:最大
+                min:最小
+                step:間距
+                maxlength:最長長度
+
+            type種類:
+                text:文字輸入框
+                password:密碼輸入框
+                number:數值輸入框
+                date:日期輸入框
+                color:顏色檢色器
+                email:email
+                tel:電話
+                url:網址
+                radio:選單按鈕，name名稱必須相同
+                checkbox:核取方塊，name需要跟後台溝同，通常使用陣列[]
+                range:滑桿
+                search:搜尋框
+                file:上傳檔案
+               
+
+            元素類型:行內元素
+        按鈕:button
+            屬性:
+                type:種類
+                    button:一般按鈕
+                    reset:清除按鈕
+                    submit:送出按鈕
+                元素類型:行內元素
+        標籤:label
+            屬性:
+                for:針對id名稱
+
+        下拉選單:select、option
+        多行文字框:textarea
+            屬性:
+                col:行
+                row:列
+     -->
+    <form action="#" method="get">
+        <input type="text" name="user" id="user" class="user" placeholder="請輸入帳號" required><br>
+        <input type="password" name="pwd"  placeholder="請輸入密碼" required><br>
+        <input type="number" name="no" placeholder="輸入數量" max="50" min="0" step="10" ><br>
+        <input type="color" name="" id=""><br>
+        <input type="date" name="" id=""><br>
+        <input type="email" name="" id="" placeholder="輸入email"><br>
+        <input type="url" name="" id="" placeholder="輸入網址" value="https://"><br>
+        <input type="tel" name="" id="" placeholder="輸入電話"><br>
+        <input type="button" value="按鈕">
+        <input type="reset" value="清除">
+        <input type="submit" value="送出"><br>
+        <label for="boy">
+            <input type="radio" name="gender" id="boy" value="boy">男
+        </label>
+        <label for="girl">
+            <input type="radio" name="gender" id="girl" value="girl">女
+        </label>
+        <br>
+        <label for="red">
+            <input type="checkbox" name="color[]" id="red" value="red">紅色
+        </label>
+        
+        <label for="green">
+            <input type="checkbox" name="color[]" id="green" value="green">綠色
+        </label>
+        
+        <label for="blue">
+            <input type="checkbox" name="color[]" id="blue" value="blue">藍色
+        </label>
+        
+        <label for="yello">
+            <input type="checkbox" name="color[]" id="yello" value="yello">黃色
+        </label>
+        
+
+        <br>
+        <input type="range" name="" id="" max="10" min="0" value="8"><br>
+        <input type="search" name="" id="">
+        <br>
+
+        <select name="address" id="">
+            <option value="台北">台北</option>
+            <option value="台中">台中</option>
+            <option value="高雄">高雄</option>
+            <option value="台南">台南</option>
+        </select>
+        <br>
+        <textarea name="" id="" cols="30" rows="10"placeholder="請輸入諮詢(100字)" maxlength="100"></textarea>
+        <button type="button" disabled>按鈕</button>
+        <button type="reset" >清除</button>
+        <button type="submit">送出</button>
+        
+    </form>
+    <form action="#" method="get">
+        <input type="text" name="user" id="user" class="user" placeholder="請輸入帳號">
+    </form>
+</body>
+</html>

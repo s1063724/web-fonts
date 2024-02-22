@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        表格:table
+            列:tr
+            儲存格:td
+            表頭儲存格:th，有文字變粗及文字置中的功能
+
+            屬性:
+                cellspacing:儲存格間距
+                cellpadding:儲存格內內距
+                colspan:欄位合併(水平合併)
+                rowspan:列位合併(垂直合併)
+     -->
+     <table border="1" cellspacing="0" cellpadding="10" width="50">
+        <tr>
+            <!-- 2合1 -->
+            <td colspan="2">1</td>
+            <!-- <td>2</td> -->
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td rowspan="2">6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <!-- <th>6</th> -->
+            <th>7</th>
+            <th>7</th>
+        </tr>
+     </table>
+</body>
+</html>

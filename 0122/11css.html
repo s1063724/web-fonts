@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 內嵌式 -->
+    <style>
+        /* 
+            css:階層樣式表，主要修飾或美化HTML內容
+            css安裝:
+                1.外聯式:連結其他網頁的檔案，連接資料夾內的檔案
+                2.內嵌式:使用style標籤，將內容寫在裡面
+                3.行內式:寫在標籤元素裡面
+            css架構:
+                選擇器{屬性; 值;}
+            css權重:
+                基本上相同元素、相同屬性，不同值會後蓋前
+                1.標籤element:      1分
+                2.類別class:        10分
+                3.選擇器id:         100分
+                4.行內式:           1000分
+                5.!importment:     10000分
+        */
+        #app,#ced{
+            color: yellow
+        }
+        .item {
+            color: green;
+        }
+        p{
+            color: blue!important;
+        }
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--  -->
+    <p>1.很久改造當初特色就算追求家庭推薦使用不。</p>
+    <p class="item">2.很久改造當初特色就算追求家庭推薦使用不。</p>
+    <p class="item" id="app">3.很久改造當初特色就算追求家庭推薦使用不。</p>
+    <p class="item" id="ced" style="color:indigo">4.很久改造當初特色就算追求家庭推薦使用不。</p>
+    <!-- 行內式 -->
+    <!-- <p class="item" style="color:red;">很久改造當初特色就算追求家庭推薦使用不。</p> -->
+</body>
+</html>
