@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            設定盒子大小:
+                width:盒子寬度
+                height:盒子高度，若父系元素沒有絕對單位時，不可以使用百分比% !
+                max-width:最大寬度
+                min-width:最小寬度
+                max-height:最大高度，若父系元素沒有絕對單位時，不可以使用百分比% !
+                min-height:最小高度，若父系元素沒有絕對單位時，不可以使用百分比% !
+            
+                寬度盡量不要使用vw,當垂直產生滾軸的時候，會讓水平也產生滾軸，所以都使用百分比%
+            背景色
+                background-color
+
+        */
+        header{
+            height:600px;
+        }
+        div{
+            max-width: 500px;
+            min-width: 200px;
+            width: 30%;
+            height: 30%;
+            background-color:blue
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div></div>
+        <!-- 區塊元素預設為直向排列 -->
+        <div></div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            linear-gradient(度數(deg), color 位置, color 位置) 線性漸層
+                    180
+                90      270
+                    0
+            radial-gradient(形狀, color 位置, color 位置 ) 放射漸層
+                橢圓形(預設)    
+                圓形
+                
+        */
+        div{
+            width: 1000px;
+            height: 500px;
+            /* linear-gradient() 線性漸層 紅色到40%的位置 綠色60%後都是*/
+            background-image: linear-gradient(45deg,red 40%,blue ,green 60%);
+            /* radial-gradient() 放射漸層 */
+            /* background-image: radial-gradient(circle,red,blue); */
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
