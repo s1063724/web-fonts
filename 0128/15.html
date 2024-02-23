@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 背景圖片剪裁遮色片 -->
+    <style>
+        /* 先歸零
+            ' * ' 代表全部元素
+        */
+        
+        @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        /* 素材網站:https://giphy.com/search/nature */
+        div{
+            width:100%;
+            height:100vh;
+            font-size: 500px;
+            font-weight: 900;
+            line-height: 100vh;
+            text-align: center;
+            letter-spacing: 20px;
+            /* 文字顏色片透明 */
+            color: transparent;
+            font-family:"Shadows Into Light", cursive;
+            background-image: url(https://media.giphy.com/media/XcsdCc78BtNBu/giphy.gif?cid=790b76114qj59q2tm006a47fhjwtkhb5kcndlahgepscorxo&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+            background-size: cover;
+            /* 剪裁遮色片 */
+            background-clip:text;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        RAYWU
+    </div>
+</body>
+</html>
